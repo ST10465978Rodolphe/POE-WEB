@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Menu – burgers, sides and drinks at The Burger Man LBV." />
+  <title>Menu – The Burger Man LBV</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">
+    <img src="images/logo.jpg" width="120" height="40" alt="BurgerMan LBV Logo">
+  </a>
+
+  <button class="menu-toggle">☰</button>
+  <button id="theme-toggle" class="theme-switch">🌙</button>
+
+  <nav aria-label="Primary Navigation">
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html" aria-current="page">Menu</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-intro">
+  <h1>Our Menu</h1>
+  <p>Explore all our signature burgers, snacks, sides and drinks.</p>
+</section>
+
+<!--=====================================
+          BURGERS TABLE
+======================================-->
+<h2>Burgers 🍔</h2>
+<table class="menu-table">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Description</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Classic Cheese</td>
+      <td>Beef, cheddar, tomato, onion, house sauce</td>
+      <td>3,000 XAF</td>
+    </tr>
+    <tr>
+      <td>Double Decker</td>
+      <td>Two beef patties, cheese, lettuce, sauce</td>
+      <td>5,000 XAF</td>
+    </tr>
+    <tr>
+      <td>Home Burger</td>
+      <td>Beef, egg, bacon, cheese</td>
+      <td>5,000 XAF</td>
+    </tr>
+    <tr>
+      <td>BurgerMan Mac</td>
+      <td>Beef, lettuce, special sauce</td>
+      <td>4,000 XAF</td>
+    </tr>
+    <tr>
+      <td>Big Royal</td>
+      <td>Beef, egg, cheese, bacon</td>
+      <td>6,500 XAF</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--=====================================
+           SNACKS SECTION
+======================================-->
+<h2>Snacks 🍗</h2>
+<ul class="menu-list">
+  <li>Chicken Wings (8 pcs) – 4,000 XAF</li>
+  <li>Chicken Shawarma – 2,500 XAF</li>
+  <li>OG Sandwich – 3,500 XAF</li>
+  <li>Bodega Style Sandwich – 5,000 XAF</li>
+</ul>
+
+<!--=====================================
+           SIDES SECTION
+======================================-->
+<h2>Sides 🍟</h2>
+<ul class="menu-list">
+  <li>Fries – 1,000 XAF</li>
+  <li>Sweet Potato Fries – 2,000 XAF</li>
+  <li>Coleslaw – 1,500 XAF</li>
+  <li>Cheese Fries & Beef — 3,500 XAF</li>
+  <li>Cheese Fries & Chicken — 3,500 XAF</li>
+</ul>
+
+<!--=====================================
+         DRINKS SECTION
+======================================-->
+<h2>Drinks 🥤</h2>
+<ul class="menu-list">
+  <li>Soft Drinks – 1,500 XAF</li>
+  <li>Fresh Lemonade – 2,000 XAF</li>
+  <li>Water – 1,000 XAF</li>
+</ul>
+
+<!--=====================================
+          FEATURED IMAGES SLIDER
+======================================-->
+
+<section class="slider">
+  <h2>New Arrivals🔥</h2>
+  <div class="slides">
+    <img src="images/wings.jpg" alt="Chicken Wings">
+    <img src="images/cheesefrites.jpg" alt="Cheese Fries">
+    <img src="images/chickenstrips.jpg" alt="Chicken Strips">
+  </div>
+
+  <button class="slide-btn prev">◀</button>
+  <button class="slide-btn next">▶</button>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> The Burger Man LBV — Libreville</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

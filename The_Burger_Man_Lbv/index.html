@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Burger Man LBV – artisan burgers in Libreville. Fresh ingredients, bold flavors, friendly service." />
+  <title>The Burger Man LBV – Home</title>
+  <link rel="preload" as="image" href="images/bigroyal.jpg">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">
+    <img src="images/logo.jpg" alt="BurgerMan LBV Logo" width="120" height="40">
+  </a>
+
+  <button class="menu-toggle" aria-label="Open Menu">☰</button>
+  <button id="theme-toggle" class="theme-switch">🌙</button>
+
+  <nav aria-label="Main Navigation">
+    <ul class="nav">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Menu</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="bigroyal">
+  <img src="images/bigroyal.jpg" alt="Big Royal Burger">
+  <div class="bigroyal-text">
+    <h1>Artisan Burgers. Big Flavor.</h1>
+    <p>Fresh, local ingredients – made to order in Libreville.</p>
+    <a class="btn" href="products.html">See Menu</a>
+    <a class="btn btn-outline" href="enquiry.html">Pre-Order</a>
+  </div>
+</section>
+
+<section class="featured">
+  <h2>Customer Favorites</h2>
+  <ul class="cards">
+    <li class="card">
+      <img src="images/classic.jpg" alt="">
+      <h3>Classic Cheese</h3>
+      <p>Beef, cheddar, tomato, onion, sauce.</p>
+      <p class="price">3000 XAF</p>
+    </li>
+
+    <li class="card">
+      <img src="images/doubledecker.jpg" alt="">
+      <h3>Double Decker</h3>
+      <p>Two patties, cheese, lettuce.</p>
+      <p class="price">5000 XAF</p>
+    </li>
+
+    <li class="card">
+      <img src="images/homestyle.jpg" alt="">
+      <h3>Home Style</h3>
+      <p>Egg, cheese, beef, bacon.</p>
+      <p class="price">5000 XAF</p>
+    </li>
+  </ul>
+</section>
+
+<section class="slider">
+  <div class="slides">
+    <img src="images/wings.jpg" alt="">
+    <img src="images/chickenstrips.jpg" alt="">
+    <img src="images/og.jpg" alt="">
+  </div>
+  <button class="slide-btn prev">◀</button>
+  <button class="slide-btn next">▶</button>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> The Burger Man LBV — Libreville</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

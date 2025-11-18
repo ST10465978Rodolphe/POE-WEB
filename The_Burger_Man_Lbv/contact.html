@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact The Burger Man LBV – location, opening hours, phone and email.">
+  <title>Contact – The Burger Man LBV</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">
+    <img src="images/logo.jpg" alt="BurgerMan LBV Logo" width="120" height="40">
+  </a>
+
+  <button class="menu-toggle">☰</button>
+  <button id="theme-toggle" class="theme-switch">🌙</button>
+
+  <nav aria-label="Primary Navigation">
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Menu</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-intro">
+    <h1>Contact Us</h1>
+    <p>Have a question? We’re here to help!</p>
+  </section>
+
+  <section class="contact-info">
+    <ul>
+      <li><strong>📍 Location:</strong> Libreville, Gabon</li>
+      <li><strong>📞 Phone:</strong> +241 76 23 20 24</li>
+      <li><strong>📧 Email:</strong> <a href="mailto:theburgermanlbv@gmail.com">theburgermanlbv@gmail.com</a></li>
+      <li><strong>⏰ Hours:</strong> Mon–Sun: 11:00–23:30</li>
+    </ul>
+  </section>
+
+  <h2 style="text-align:center; margin-top:2rem;">Send us a Message</h2>
+
+  <form id="contactForm" class="form">
+
+    <fieldset>
+      <legend>Your Information</legend>
+
+      <label for="cname">Full Name*</label>
+      <input id="cname" type="text" required>
+
+      <label for="cemail">Email*</label>
+      <input id="cemail" type="email" required>
+
+      <label for="cphone">Phone</label>
+      <input id="cphone" type="tel" placeholder="+241 ...">
+    </fieldset>
+
+    <fieldset>
+      <legend>Message</legend>
+
+      <label for="csubject">Subject*</label>
+      <input id="csubject" type="text" required>
+
+      <label for="cmessage">Message*</label>
+      <textarea id="cmessage" rows="5" required></textarea>
+    </fieldset>
+
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> The Burger Man LBV • Libreville</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

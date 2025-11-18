@@ -1,0 +1,361 @@
+/* ===============================
+   Reset & Base
+=============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background: linear-gradient(180deg, #000 0%, #111 100%);
+  color: #fff;
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  color: #ffa500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover, a:focus {
+  color: #ffb733;
+  text-decoration: underline;
+}
+a:focus, button:focus {
+  outline: 2px dashed #ffa500;
+  outline-offset: 3px;
+}
+
+/* ===============================
+   Light Theme
+=============================== */
+body.light-theme {
+  background: #fdf6e3;
+  color: #111;
+}
+body.light-theme a {
+  color: #ff8c00;
+}
+body.light-theme a:hover {
+  color: #ffa500;
+}
+body.light-theme .site-header,
+body.light-theme .site-footer,
+body.light-theme .form,
+body.light-theme .card {
+  background: #fff;
+  color: #111;
+  border-color: #ff8c00;
+}
+body.light-theme .btn {
+  background: #ff8c00;
+  color: #fff;
+}
+body.light-theme .btn-outline {
+  color: #ff8c00;
+  border-color: #ff8c00;
+}
+body.light-theme .btn-outline:hover {
+  background: #ff8c00;
+  color: #fff;
+}
+
+/* ===============================
+   Header & Navigation
+=============================== */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #111;
+  border-bottom: 2px solid #ffa500;
+}
+
+.site-header .logo img {
+  display: block;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav li a {
+  color: #fff;
+  font-weight: bold;
+}
+.nav li a:hover,
+.nav li a[aria-current="page"] {
+  color: #ffa500;
+}
+
+/* ===============================
+   Mobile Menu
+=============================== */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #ffa500;
+  cursor: pointer;
+}
+.nav.nav-open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+    background: #111;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 1rem 0;
+    border-top: 2px solid #ffa500;
+  }
+}
+
+/* ===============================
+   Hero / Banner
+=============================== */
+.bigroyal, .hero {
+  position: relative;
+  text-align: center;
+}
+.bigroyal img, .hero img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  opacity: 0.85;
+  transition: transform 0.5s;
+}
+.bigroyal img:hover {
+  transform: scale(1.03);
+}
+.bigroyal-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.bigroyal-text h1 {
+  font-size: 3rem;
+  color: #ffa500;
+  text-shadow: 2px 2px 6px #000;
+}
+.bigroyal-text p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* ===============================
+   Buttons
+=============================== */
+.btn {
+  background: #ffa500;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0.3rem;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: #ffb733;
+}
+.btn-outline {
+  background: transparent;
+  border: 2px solid #ffa500;
+  color: #ffa500;
+}
+.btn-outline:hover {
+  background: #ffa500;
+  color: #000;
+}
+
+/* ===============================
+   Featured Cards
+=============================== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.card {
+  background: #111;
+  border: 2px solid #ffa500;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffa500;
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card h3 {
+  color: #ffa500;
+  margin: 0.8rem 0 0.3rem;
+}
+.card .price {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+/* ===============================
+   Menu Table
+=============================== */
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+.menu-table th, .menu-table td {
+  border: 1px solid #ffa500;
+  padding: 0.8rem;
+}
+.menu-table th {
+  background: #111;
+  color: #ffa500;
+}
+
+/* ===============================
+   Forms
+=============================== */
+.form {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #ffa500;
+}
+.form fieldset {
+  border: none;
+  margin-bottom: 1rem;
+}
+.form legend {
+  color: #ffa500;
+  font-weight: bold;
+}
+.form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ffa500;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+}
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #ffa500;
+}
+
+/* ===============================
+   Contact Info
+=============================== */
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+.contact-info li {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.contact-info a {
+  color: #ffa500;
+}
+
+/* ===============================
+   Slider
+=============================== */
+.slider {
+  position: relative;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+.slider .slides img {
+  width: 100%;
+  display: none;
+  border-radius: 12px;
+}
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #ffa500;
+  border: none;
+  font-size: 2rem;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+.slide-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+.slide-btn.prev { left: 10px; }
+.slide-btn.next { right: 10px; }
+
+/* ===============================
+   Footer
+=============================== */
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #111;
+  border-top: 2px solid #ffa500;
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   Responsive Design
+=============================== */
+/* Tablet */
+@media (max-width: 1024px) {
+  .bigroyal-text h1 { font-size: 2.5rem; }
+  .cards { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .bigroyal-text h1 { font-size: 2rem; }
+  .cards { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  body { font-size: 14px; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
+}

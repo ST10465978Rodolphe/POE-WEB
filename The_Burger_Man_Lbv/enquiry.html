@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pre-order and catering enquiries for The Burger Man LBV.">
+  <title>Enquiry – The Burger Man LBV</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">
+    <img src="images/logo.jpg" alt="BurgerMan LBV Logo" width="120" height="40">
+  </a>
+
+  <button class="menu-toggle">☰</button>
+  <button id="theme-toggle" class="theme-switch">🌙</button>
+
+  <nav aria-label="Primary Navigation">
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Menu</a></li>
+      <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Place a Pre-Order</h1>
+  <p class="center-text">Fill in the form below and we’ll get back to you shortly.</p>
+
+  <form id="enquiryForm" class="form">
+
+    <fieldset>
+      <legend>Your Details</legend>
+
+      <label for="name">Full Name*</label>
+      <input id="name" type="text" required>
+
+      <label for="phone">Phone Number*</label>
+      <input id="phone" type="tel" placeholder="+241 ..." required>
+
+      <label for="email">Email*</label>
+      <input id="email" type="email" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Order Details</legend>
+
+      <label for="items">Order / Quantity*</label>
+      <textarea id="items" rows="3" placeholder="Example: x4 Classic Cheese, x2 Big Royal" required></textarea>
+
+      <label for="date">Preferred Date</label>
+      <input id="date" type="date">
+
+      <label for="time">Preferred Time</label>
+      <input id="time" type="time">
+
+      <label for="message">Extra Notes</label>
+      <textarea id="message" rows="3" placeholder="Allergies, delivery notes, etc."></textarea>
+    </fieldset>
+
+    <button type="submit" class="btn">Submit Enquiry</button>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> The Burger Man LBV • Libreville</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
