@@ -1,79 +1,114 @@
-# The Burger Man LBV – Website Project
+🧑‍💻 Project Title
 
-## 📌 Overview
-This repository contains the website project for **The Burger Man LBV**, a local restaurant in Libreville specializing in artisan burgers.  
+The Burger Man LBV – Responsive Website
 
-Part 2 focuses on **visual styling with CSS** and **responsive design**.  
+📌 Project Description
 
----
+This project is a responsive multi-page website created for The Burger Man LBV, a fictional fast-food brand.
+The website includes information pages such as Home, About, Menu, Enquiry, and Contact, and demonstrates:
 
-## ✨ Part 2 – CSS Styling and Responsive Design
+Semantic HTML structure
 
-### Implemented Features
-- **External Stylesheet**: All HTML pages are linked to `css/style.css`.  
-- **Base Styles**: Reset applied for consistency across browsers.  
-- **Typography**: Clear hierarchy using Poppins for body text and bold headers.  
-- **Navigation**: Flexbox-based navbar with hover/focus styles.  
-- **Hero Section**: Banner image with overlay text and CTA buttons.  
-- **Cards Layout**: Responsive grid for featured menu items.  
-- **Tables**: Styled menu table for clear readability.  
-- **Forms**: Styled enquiry and contact forms with input focus states.  
-- **Footer**: Consistent footer across all pages.  
-- **Interactive Styles**: Buttons, links, and cards styled with hover and focus pseudo-classes.  
-- **Responsive Design**:  
-  - Desktop layout (grid, multi-column).  
-  - Tablet adjustments at `1024px`.  
-  - Mobile-friendly single-column layout at `768px` and below.  
-  - Font sizes and navigation adapt seamlessly.  
+Responsive CSS design
 
----
+Accessibility improvements
 
-## 🛠️ Changelog
+UI styling and layout techniques
 
-### Part 1 → Part 2
-- Added **external stylesheet (`style.css`)** and linked it to all HTML files.  
-- Established **base styles**: background gradient, text colors, font families.  
-- Styled **navigation menu** with hover and active states.  
-- Implemented **hero section styling** (banner image + text overlay).  
-- Created **cards layout** for featured menu items.  
-- Styled **menu table** with borders, headers, and row colors.  
-- Styled **forms** with custom inputs, placeholders, and responsive layout.  
-- Added **interactive pseudo-classes** (`:hover`, `:focus`) to buttons, links, and cards.  
-- Implemented **media queries** for desktop, tablet, and mobile.  
-- Optimized **images** to scale properly across devices.  
+Basic JavaScript interaction and validation
 
----
+The project continues from Part 1, integrating corrections and extending functionality according to assignment requirements.
 
-## 📸 Screenshots (Evidence)
+✔️ Technologies Used
+Technology	Purpose
+HTML5	Structure and content
+CSS3	Visual styling and responsive layout
+Flexbox & CSS Grid	Page layout and adaptive content
+JavaScript (ES6)	Client-side interaction and validation
+Git & GitHub	Version control and submission
+🔧 Improvements Based on Part 1 Feedback
+Change Implemented	Description
+Accessibility features	Added semantic roles, aria-current, alt text, improved navigation
+External stylesheet	Linked one global style.css to all pages
+Naming conventions standardized	File structure and class naming made consistent
+Mobile navigation	Added responsive burger menu toggle
+🎨 Part 2: CSS Styling
+Completed Requirements
 
-Please include screenshots of the website displayed at different screen sizes:
+External stylesheet applied to all pages
 
-1. **Desktop View** – Full layout with grid and multi-column content.  
-2. **Mobile View** – Single-column layout, stacked navigation, scaled fonts. 
+Base styles, typography hierarchy, and consistent color theme
 
-## Screenshots
+Responsive layout using Flexbox, CSS Grid & media queries
 
-### Desktop View  
-![Desktop Screenshot](screenshots/desktop.png)
+Pseudo-classes included (hover, focus, active)
 
-### Mobile View  
-![Mobile Screenshot](screenshots/mobile.png)
+Interactive visual styling (cards, buttons, hero banner)
 
-git add screenshots/ README.md
-git commit -m "Added screenshots for responsive design (desktop, mobile)"
-git push origin main
+Dark Mode Theme Toggle (JavaScript controlled)
 
----
+📱 Part 3: JavaScript & Interactivity
+Implemented Features
+Feature	Status
+🟧 Form validation for Enquiry & Contact	✔️ Implemented
+🌙 Dark/Light theme toggle	✔️ Implemented
+☰ Responsive mobile menu button	✔️ Implemented
+🖼️ Image slider on the homepage	✔️ Implemented
+✔️ Alerts for missing required fields	✔️ Implemented
+🖥️ Responsive Testing Evidence
 
-## 📚 References
-- [MDN Web Docs – CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)  
-- [W3Schools – Responsive Web Design](https://www.w3schools.com/css/css_rwd_intro.asp)  
-- [Unsplash](https://unsplash.com) & [Pexels](https://pexels.com) – royalty-free images  
-- **Class Notes** – CSS and JS presentation (2025)  
+Screenshots included in the /screenshots folder:
 
----
+View Type	Screenshot File
+Desktop View	desktop.png
+Tablet View	tablet.png
+Mobile View	mobile.png
 
-## 👨‍💻 Author
-**Name:** Babonneau Rodolphe Antony-Georges  
-**Student Number:** ST10465978  
-**Course:** Diploma in Software Development (DISD), Rosebank College – Cape Town  
+If screenshots do not appear on GitHub, ensure the folder name exactly matches:
+/screenshots/.
+
+📂 File Structure
+POE-WEB-part2-projet1/
+│── index.html
+│── about.html
+│── products.html
+│── enquiry.html
+│── contact.html
+│── css/
+│     └── style.css
+│── js/
+│     └── main.js
+│── images/
+│────── (Project images)
+│── screenshots/
+│     ├── desktop.png
+│     ├── tablet.png
+│     └── mobile.png
+│── README.md
+
+📘 References
+
+MDN Web Docs – https://developer.mozilla.org
+
+W3Schools – Responsive Design Tutorials
+
+CSS-Tricks – Flexbox & Grid Guides
+
+Google Fonts Library
+
+GitHub Learning Resources
+
+📅 Last Updated
+
+18 November 2025
+
+🏁 Submission Status
+
+✔️ Code pushed to GitHub
+✔️ README updated
+✔️ Responsive and interactive behaviour implemented
+✔️ Demonstrates required outcomes for Part 1, part 2 and Part 3
+
+🎉 Ready for Marking
+
+Thank you for reviewing the project.
